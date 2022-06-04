@@ -105,11 +105,11 @@ function WebCamera() {
 
   return (
     <div>
-      <Stack margin="30px 0">
-        <Button disabled={clicked} onClick={(e) => enableWebCam(e)}>
-          Enable Camera
-        </Button>
-      </Stack>
+      {/* <Stack margin="30px 0"> */}
+      <Button disabled={clicked} onClick={(e) => enableWebCam(e)}>
+        Enable Camera
+      </Button>
+      {/* </Stack> */}
       {/* <Text>Prediction score {score}</Text> */}
       <div id="liveview" className="camView">
         <video id="camera" width="100%" height="100%" autoPlay muted></video>
